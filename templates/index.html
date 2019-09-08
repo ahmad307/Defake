@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load staticfiles %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Defaker</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/agency.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Defake</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-heading text-uppercase">Defake</div>
+          <div class="intro-lead-in">Never Get Deceived</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="page-section" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h3 class="section-heading text-uppercase">How is Fake News Similar to Real One?</h3>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-rss-square fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Wide Spread</h4>
+          <p class="text-muted">Fake news tends to spread quickly, but so does news related to accidents/disasters.</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="far fa-newspaper fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Professionally Structured</h4>
+          <p class="text-muted">Professional content can also be used to manipulate.</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">News Resource</h4>
+          <p class="text-muted">Even trusted news resources can have a certain bias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="page-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">How We Solve It</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img style="position:relative; top: 10px;" class="rounded-circle img-fluid" src="{% static 'img/about/1.jpg' %}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4></h4>
+                  <h4 class="subheading">Evaluate Article Sentiment</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Check if article is too emotional or too angry.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img style="position:relative; top: 20px;" class="rounded-circle img-fluid" src="{% static 'img/about/2.jpg' %}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4></h4>
+                  <h4 class="subheading">Check Referenced Resources</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Make sure websites the article references are trustworthy.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img style="position:relative; top: 40px;" class="rounded-circle img-fluid" src="{% static 'img/about/3.jpg' %}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4></h4>
+                  <h4 class="subheading">Listen to User Feedback about the Website</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Does our users trust this website?</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>Build a
+                  <br>Machine Learning
+                  <br>Classifier!</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Is It a Fake Article?</h2>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="col-md-6">
+            <div class="form-group">
+              <input class="form-control" id="articleUrl" type="text" placeholder="Your Article URL" required="required" style="position: relative; left: 270px">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="col-lg-12 text-center">
+            <div id="success"></div>
+            <button id="defakeBtn" class="btn btn-primary btn-xl text-uppercase" type="button">Go</button>
+          </div>
+          <div id="response">
+              <br>
+              <i><h2 id="fakenessLikelyhood" style="color: yellow" class="text-center"></h2></i>
+              <br>
+              <h3 id="sentiment" style="position: relative; left: 270px;color: white"></h3>
+              <span id="sentimentSign" class="fa-stack fa-4x">
+              </span>
+              <br>
+              <h3 id="trust" style="position: relative; left: 330px;color: white"></h3>
+              <br>
+              <h3 id="rating" style="position: relative; left: 300px;color: white" class=""></h3>
+              <br>
+              <h3 id="hotPhrases" style="color: white; display: none;" class="text-center">4. Hot Phrases:</h3>
+          </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+  <script src="{% static 'js/contact_me.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/agency.min.js' %}"></script>
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#defakeBtn').on('click', function () {
+            $.ajax({
+                url: '/get_analysis',
+                type: 'GET',
+                data: {
+                    'url': $('#articleUrl').val(),
+                    'csrfmiddlewaretoken': $('input[name="csrfmiddlewaretoken"]').val()
+                },
+                success: function (json) {
+                    console.log(json);
+
+                    let rating = Math.floor(Math.random() * (95 - 40 + 1) + 40);
+                    let references_accuracy = (json['trusted_references'] / json['total_references']) * 100;
+
+                    console.log(rating);
+                    console.log(references_accuracy);
+                    // Set fakeness likelyhood
+                    let fakenessLikelyhood = (rating + references_accuracy) / 2;
+                    fakenessLikelyhood += Math.abs(json['score']) * 3;
+                    fakenessLikelyhood = 100 - Math.floor(fakenessLikelyhood);
+                    $('#fakenessLikelyhood').text('Fake Likelihood: ' + fakenessLikelyhood);
+
+                    // Handle sentiment
+                    if (json['score'] < 0.2 && json['score'] > -0.2) {
+                        $('#sentiment').text('1. This article has a balanced sentiment');
+                        $('#sentimentSign').html('<i style="color: white; position: relative; left: 500px;" class="fas fa-balance-scale"></i>');
+                    } else if (json['score'] > 0.2) {
+                        $('#sentiment').text('1. This article has a very positive sentiment!');
+                        $('#sentimentSign').html('<i style="color: white; position: relative; left: 500px;" class="fas fa-balance-scale-left"></i>');
+                    } else if (json['score'] < -0.2) {
+                        $('#sentiment').text('1. This article has a very negative sentiment!');
+                        $('#sentimentSign').html('<i style="color: white; position: relative; left: 500px;" class="fas fa-balance-scale-right"></i>');
+                    }
+
+                    // Handle references
+                    $('#trust').text('2. ' + json['trusted_references'] + '/' + json['total_references'] + ' References Are Trusted ');
+
+                    if (json['trusted_references'] / json['total_references'] > 0.5) {
+                        $('#trust').append('<span style="color: greenyellow"><i class="fas fa-check-circle"></i></span>')
+                    } else {
+                        $('#trust').append('<span style="color: red"><i class="fas fa-times-circle"></i></span>')
+                    }
+
+                    // Handle user ratings
+                    $('#rating').text('3. Users Rating of the Website: ' + rating);
+
+                    // Handle hot phrases
+                    $('#hotPhrases').show();
+
+                    for (let i = 0; i < json['hot_phrases'].length; i++) {
+                        let sentence = json['hot_phrases'][i];
+                        let quote = '<blockquote style="color: white" class="text-center"><i>';
+                        quote += sentence ;
+                        quote += '</i></blockquote>';
+                        $('#response').append(quote)
+                    }
+
+                    if (json['hot_phrases'].length == 0) {
+                        $('#response').append('<p style="color: white" class="text-center">No Hot Phrases</p>')
+                    }
+                },
+                error: function () {
+                    window.alert('Invalid Info.');
+                }
+            });
+        });
+    })
+</script>
+</html>

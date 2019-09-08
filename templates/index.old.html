@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Defake</title>
+</head>
+<body>
+<h1>Hi there!</h1>
+<label for="articleUrl">Article URL</label>
+<input name="articleUrl" id="articleUrl" placeholder="Article URL">
+<button id="defakeBtn" type="button">Defake</button>
+</body>
+<script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#defakeBtn').on('click', function () {
+            $.ajax({
+                url: '/get_analysis',
+                type: 'GET',
+                data: {
+                    'url': $('#articleUrl').val(),
+                    'csrfmiddlewaretoken': $('input[name="csrfmiddlewaretoken"]').val()
+                },
+                success: function (json) {
+                    console.log(json);
+                },
+                error: function () {
+                    window.alert('Invalid Info.');
+                }
+            });
+        });
+    })
+</script>
+</html>
