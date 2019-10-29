@@ -63,8 +63,10 @@ def get_references(soup):
 
 
 def get_analysis(article):
-    "Evaluates a document sentiment."
-    credentials = service_account.Credentials.from_service_account_file("D:\Projects\Defake - tests\creds.json")
+    """Evaluates a document sentiment."""
+    module_dir = os.path.dirname(__file__)
+    file_path = os.path.join(module_dir, 'creds.json')
+    credentials = service_account.Credentials.from_service_account_file(file_path)
     client = language.LanguageServiceClient(credentials=credentials)
 
     # The text to analyze
