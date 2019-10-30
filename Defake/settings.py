@@ -26,7 +26,7 @@ SECRET_KEY = 't(rj^8esppi+gpzx%br+3z*25$4%&g6w=r!+bw=3hs@@8$ktou'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'nearest-place.herokuapp.com',
+    'defake.herokuapp.com',
 ]
 
 
